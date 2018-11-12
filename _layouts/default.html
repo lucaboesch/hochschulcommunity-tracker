@@ -22,7 +22,20 @@
 </header>
 <section>
 
-{{ content }} xx {{ content }}
+	<p><b>Tracker-Query</b></p>
+	<p>
+<pre>
+(
+	assignee in (
+		{{ content }}
+	) OR
+	reporter in (
+		{{ content }}
+	)
+)
+AND resolution = Unresolved AND Project = MDL AND Status not in (closed) ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC
+</pre>
+	</p>
 
     </section>
       <footer>
