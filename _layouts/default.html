@@ -26,14 +26,14 @@
 	<p><a href="https://tracker.moodle.org/issues/?jql=(
 assignee in (
 	{{ page.content | url_encode }}
-) OR
+) OR%20
 reporter in (
 	{{ page.content | url_encode }}
 )
-)
-AND resolution = Unresolved
-AND Project = MDL
-AND Status not in (closed) 
+)%20
+AND resolution = Unresolved %20
+AND Project = MDL %20
+AND Status not in (closed) %20
 ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC">
 	Open in Tracker</a></p>
 	<p>
