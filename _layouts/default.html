@@ -33,7 +33,10 @@
 		{{ content }}
 	)
 )
-AND resolution = Unresolved AND Project = MDL AND Status not in (closed) ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC
+AND resolution = Unresolved
+AND Project = MDL
+AND Status not in (closed) 
+ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC
 </pre>
 <button class="btn" data-clipboard-target="#filter">
     <img src="assets/clippy.svg" alt="Copy to clipboard">
