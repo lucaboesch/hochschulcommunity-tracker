@@ -25,10 +25,10 @@
 	<p><b>Tracker-Query</b></p>
 	<p><a href="https://tracker.moodle.org/issues/?jql=(
 assignee in (
-	{{ content | url_encode }}
+	{{ page.content | url_encode }}
 ) OR
 reporter in (
-	{{ content | url_encode }}
+	{{ page.content | url_encode }}
 )
 )
 AND resolution = Unresolved
@@ -40,10 +40,10 @@ ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, a
 <pre id="filter">
 (
 	assignee in (
-		{{ content }}
+		{{ page.content }}
 	) OR
 	reporter in (
-		{{ content }}
+		{{ page.content }}
 	)
 )
 AND resolution = Unresolved
