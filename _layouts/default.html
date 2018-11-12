@@ -23,6 +23,19 @@
 <section>
 
 	<p><b>Tracker-Query</b></p>
+	<p><a href="(
+assignee in (
+	{{ content | url_encode }}
+) OR
+reporter in (
+	{{ content | url_encode }}
+)
+)
+AND resolution = Unresolved
+AND Project = MDL
+AND Status not in (closed) 
+ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC">
+	Open in Tracker</a></p>
 	<p>
 <pre id="filter">
 (
