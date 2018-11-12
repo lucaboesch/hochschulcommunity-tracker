@@ -25,25 +25,25 @@
 	<p><b>Tracker-Query</b></p>
 	<p><a href="https://tracker.moodle.org/issues/?jql=(
 assignee in (
-	{{ content | url_encode }}
-) OR
+	{{ page.content | url_encode }}
+) OR%20
 reporter in (
-	{{ content | url_encode }}
+	{{ page.content | url_encode }}
 )
-)
-AND resolution = Unresolved
-AND Project = MDL
-AND Status not in (closed) 
+)%20
+AND resolution = Unresolved %20
+AND Project = MDL %20
+AND Status not in (closed) %20
 ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC">
 	Open in Tracker</a></p>
 	<p>
 <pre id="filter">
 (
 	assignee in (
-		{{ content }}
+		{{ page.content }}
 	) OR
 	reporter in (
-		{{ content }}
+		{{ page.content }}
 	)
 )
 AND resolution = Unresolved
