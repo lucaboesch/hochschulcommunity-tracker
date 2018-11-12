@@ -24,7 +24,7 @@
 
 	<p><b>Tracker-Query</b></p>
 	<p>
-<pre>
+<pre id="filter">
 (
 	assignee in (
 		{{ content }}
@@ -35,6 +35,9 @@
 )
 AND resolution = Unresolved AND Project = MDL AND Status not in (closed) ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC
 </pre>
+<button class="btn" data-clipboard-target="#filter">
+    <img src="assets/clippy.svg" alt="Copy to clipboard">
+</button>
 	</p>
 
     </section>
@@ -45,6 +48,7 @@ AND resolution = Unresolved AND Project = MDL AND Status not in (closed) ORDER B
 					        </footer>
 						    </div>
 						        <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+						        <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
 							    
 	  </body>
 </html>
