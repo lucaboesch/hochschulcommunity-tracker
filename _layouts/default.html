@@ -21,21 +21,23 @@
 
 </header>
 <section>
-
-	<p><b>Tracker-Query</b></p>
-	<p><a href="https://tracker.moodle.org/issues/?jql=(
+	<h2>Was mache ich damit?<h2>
+	<ul>
+		<li><a href="https://tracker.moodle.org/issues/?jql=(
 assignee in (
-	{{ page.content | url_encode }}
-) OR%20
-reporter in (
-	{{ page.content | url_encode }}
-)
-)%20
-AND resolution = Unresolved %20
+{{ page.content | url_encode }}
+) OR reporter in (
+{{ page.content | url_encode }}
+) ) AND resolution = Unresolved %20
 AND Project = MDL %20
 AND Status not in (closed) %20
-ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC">
-	Open in Tracker</a></p>
+ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, assignee ASC"
+			>Im Tracker öffnen</a></li>
+		<li>Klick im Tracker auf "Save as" und vergib einen Namen für die Abfrage</li>
+		<li>Klick anschließend dort auf "New subscription" und lege einen Zeitplan fest, z. B. Freitags um 9:00 Uhr.</li>
+		<li>Wenn dich eines der Issues ebenfalls betrifft, zeig Unterstützung indem du dafür abstimmst und ggf. einen Kommentar hinzufügst.</li> 
+		<li><a href="{{ site.github.repository_url }}">Beobachte dieses Repository</a>, um Änderungen mitzubekommen. So kannst du feststellen, wann du ggf. deine Abfrage anpassen solltest.</li> 
+	</ul>
 	<p>
 <pre id="filter" style="height: 150px; overflow-y: auto;">
 ( assignee in (
@@ -56,7 +58,7 @@ ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, a
     </section>
       <footer>
 	      <h2>Wer fehlt?</h2>
-	      <p class="view"><a href="{{ site.github.repository_url }}/pulls">Bitte füge dich und weitere bekannte Nutzernamen in GitHub hinzu<br>
+	      <p class="view"><a href="{{ site.github.repository_url }}/pulls">Bitte füg dich und weitere bekannte Nutzernamen in GitHub hinzu!<br>
 		      <small>{{ site.github.repository_nwo }}</small></a></p>
           
 				          <p><small>Hosted on GitHub Pages</small></p>
