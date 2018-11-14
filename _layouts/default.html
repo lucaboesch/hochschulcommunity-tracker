@@ -26,7 +26,7 @@
 </header>
 <section>
 	<h2>Was mache ich damit?</h2>
-	<ul>
+	<ol>
 		<li><a href="https://tracker.moodle.org/issues/?jql=(
 assignee in (
 {{ page.content | url_encode }}
@@ -41,7 +41,7 @@ ORDER BY updated DESC, Status ASC, reporter DESC, created DESC, issuetype ASC, a
 		<li>Klick anschließend dort auf "New subscription" und lege einen Zeitplan fest, z. B. freitags um 9:00 Uhr.</li>
 		<li>Wenn dich eines der Issues ebenfalls betrifft, zeig Unterstützung indem du dafür abstimmst und ggf. einen Kommentar hinzufügst.</li> 
 		<li><a href="{{ site.github.repository_url }}">Beobachte dieses Repository</a>, um Änderungen mitzubekommen. So kannst du feststellen, wann du ggf. deine Abfrage anpassen solltest.</li> 
-	</ul>
+	</ol>
 	<p>
 <pre id="filter" style="height: 150px; overflow-y: auto;">
 ( assignee in (
