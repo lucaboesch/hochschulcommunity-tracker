@@ -105,4 +105,5 @@ christianwolters,
 thomas.ludwig,
 trueeh,
 dasistwas,
-throchelmeyer
+throchelmeyer,
+jjhauber
