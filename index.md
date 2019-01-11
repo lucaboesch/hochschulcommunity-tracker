@@ -109,4 +109,5 @@ throchelmeyer,
 jjhauber,
 christophbaumbach,
 Sanders,
-stefanerlachner
+stefanerlachner,
+nicoroeser
