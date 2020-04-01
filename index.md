@@ -151,4 +151,10 @@ dhbwadmin,
 timoscheuer,
 girl0000,
 500gLychee,
-schorsch101
+schorsch101,
+weberwu,
+"Daniel Ziegenberg",
+uhj,
+glatzert,
+lukmicsch,
+ValentinK
