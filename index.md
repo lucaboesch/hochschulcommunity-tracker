@@ -181,4 +181,7 @@ bruzie,
 matrei,
 dertheo,
 vinzenz,
-2xB
+2xB,
+Magalied,
+karalics,
+dsjiern
