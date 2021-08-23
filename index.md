@@ -186,4 +186,5 @@ Magalied,
 karalics,
 dsjiern,
 mstimvol,
-famondir
+famondir,
+misc
