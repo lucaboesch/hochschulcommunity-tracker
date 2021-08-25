@@ -187,4 +187,5 @@ karalics,
 dsjiern,
 mstimvol,
 famondir,
-misc
+misc,
+nicku
