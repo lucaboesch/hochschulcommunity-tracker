@@ -190,4 +190,5 @@ famondir,
 misc,
 nicku,
 phreaknerd,
-niklasstich
+niklasstich,
+Sigmund
