@@ -189,4 +189,5 @@ mstimvol,
 famondir,
 misc,
 nicku,
-phreaknerd
+phreaknerd,
+niklasstich
