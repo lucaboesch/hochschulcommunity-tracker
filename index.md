@@ -202,4 +202,8 @@ strobotta,
 stefan.hanauska,
 philippimhof,
 tsbartel,
-phmemmel
+phmemmel,
+philippimhof,
+"melanie.treitinger@ruhr-uni-bochum.de",
+noralanges,
+ShUl0w
